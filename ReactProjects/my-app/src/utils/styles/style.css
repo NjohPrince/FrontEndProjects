@@ -1,13 +1,6 @@
 .card-component {
     margin-bottom: 15px;
     width: 400px;
-    transition: .5s ease-in-out;
-    -webkit-transition: .5s ease-in-out;
-    position: absolute;
-    opacity: 1;
-}
-.card-component:hover {
-    opacity: 0;
 }
 .card-component h2 {
     margin: 0.8rem 1rem;

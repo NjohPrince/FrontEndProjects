@@ -21,11 +21,20 @@ img {
   height: 100%;
   object-fit: cover;
 }
-.card-1 {
+.card {
   position: absolute;
   display: flex;
   display: -ms-flexbox;
   align-items: center;
   justify-content: center;
+  transition: .5s ease-in-out;
+  background: #fff;
+  -webkit-transition: .5s ease-in-out;
+  opacity: 1;
+}
+.card-1 {
   z-index: 9999;
+}
+.card-1:hover {
+  opacity: 0;
 }
