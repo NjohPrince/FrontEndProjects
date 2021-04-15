@@ -1,6 +1,6 @@
 .card-component {
-    padding: 15px;
     margin-bottom: 15px;
+    width: 500px;
 }
 .card-component h2 {
     margin: 0 0 10px 0;

@@ -1,12 +1,12 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import './style.css'
+import '../utils/styles/style.css'
 
 export default function StyledCard({ children, title, type }) {
   return (
     <div className={`card-component ${type}`}>
-      <h2>{title}</h2>
       {children}
+      <h2>{title}</h2>
     </div>
   )
 }

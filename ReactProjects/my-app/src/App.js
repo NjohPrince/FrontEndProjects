@@ -8,7 +8,7 @@ class App extends Component {
     return (
       <div className="App">
         <StyledCard title="Items Not Added" type="success">
-          <div>Your items are out of stock.</div>
+          <img src="https://source.unsplash.com/random/800x600" alt="image-placeholder" />
         </StyledCard>
       </div>
     );
