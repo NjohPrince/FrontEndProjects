@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import '../utils/styles/style.css'
 
-export default function StyledCard({ children, title, type }) {
+export default function StyledCard({ children, btnValue, title, type }) {
   return (
     <div className={`card-component ${type}`}>
       {children}
@@ -13,6 +13,7 @@ export default function StyledCard({ children, title, type }) {
         numquam sequi debitis beatae. Facere eaque minus rem cum, 
         quaerat soluta libero accusantium nesciunt optio!
       </h3>
+      <button className={`btn ${type}`}>{ btnValue }</button>
     </div>
   )
 }

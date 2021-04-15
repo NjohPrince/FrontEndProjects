@@ -36,8 +36,8 @@ img {
   justify-content: center;
   opacity: 1;
   background: #fff;
-  transition: 1s ease-in-out;
-  -webkit-transition: 1s ease-in-out;
+  transition: all 1s ease-in-out;
+  -webkit-transition: all 1s ease-in-out;
 
 }
 .card-1 {

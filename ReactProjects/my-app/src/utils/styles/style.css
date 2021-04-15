@@ -1,6 +1,7 @@
 .card-component {
     margin-bottom: 15px;
     width: 400px;
+    border-radius: 8px;
 }
 .card-component h2 {
     margin: 0.8rem 1rem;
@@ -10,15 +11,32 @@
     margin-bottom: 0.8rem;
     color: rgba(0, 0, 0, 0.9);
     font-weight: normal;
+    font-size: 18px;
+}
+.btn {
+    margin: 0 1rem;
+    margin-bottom: 1rem;
+    padding: 0.5rem 2rem;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 15px;
+    color: #fff;
+}
+.btn.success {
+    background: #6DA06F;
+}
+.btn.error {
+    background: #F56260;
 }
 .card-component.success {
-    border: #6DA06F solid 1px;
+    border: #6DA06F solid 3px;
 }
 .success h2 {
     color: #6DA06F;
 }
 .card-component.error {
-    border: #F56260 solid 1px;
+    border: #F56260 solid 3px;
 }
 .error h2 {
     color: #F56260;
