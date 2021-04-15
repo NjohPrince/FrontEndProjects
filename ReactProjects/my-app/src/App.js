@@ -7,7 +7,7 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <StyledCard>
+        <StyledCard title="Items Not Added" type="success">
           <div>Your items are out of stock.</div>
         </StyledCard>
       </div>
