@@ -7,6 +7,7 @@ class App extends Component {
   render() {
     return (
       <div className="App">
+        <h1>Hover To See Behaviour</h1>
         <div className="box-container">
           <div className="card card-1">
             <StyledCard title="Getty Images unsplash.com" type="error" btnValue="Try React">
