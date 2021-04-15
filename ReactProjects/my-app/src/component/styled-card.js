@@ -11,3 +11,11 @@ export default function StyledCard({ children, title, type }) {
   )
 }
 
+StyledCard.propTypes = {
+  children: PropTypes.oneOfType([
+    PropTypes.arrayOf(PropTypes.element), 
+    PropTypes.element.isRequired
+  ]),
+  title: PropTypes.string.isRequired,
+  type: PropTypes.string.isRequired,
+}
