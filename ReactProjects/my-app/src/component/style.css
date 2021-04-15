@@ -1,17 +1,17 @@
-.alert-wrapper {
+.card-component {
     padding: 15px;
     margin-bottom: 15px;
 }
-.alert-wrapper h2 {
+.card-component h2 {
     margin: 0 0 10px 0;
 }
-.alert-wrapper.success {
+.card-component.success {
     border: #6DA06F solid 1px;
 }
 .success h2 {
     color: #6DA06F;
 }
-.alert-wrapper.error {
+.card-component.error {
     border: #F56260 solid 1px;
 }
 .error h2 {

@@ -4,7 +4,7 @@ import './style.css'
 
 export default function StyledCard({ children, title, type }) {
   return (
-    <div className={`alert-wrapper ${type}`}>
+    <div className={`card-component ${type}`}>
       <h2>{title}</h2>
       {children}
     </div>
