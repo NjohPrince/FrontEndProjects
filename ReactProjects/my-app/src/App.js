@@ -7,8 +7,8 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <StyledCard title="Items Not Added" type="success">
-          <img src="https://source.unsplash.com/random/800x600" alt="image-placeholder" />
+        <StyledCard title="Getty Images unsplash.com" type="error">
+          <img src="https://source.unsplash.com/random/800x500" alt="image-placeholder" />
         </StyledCard>
       </div>
     );

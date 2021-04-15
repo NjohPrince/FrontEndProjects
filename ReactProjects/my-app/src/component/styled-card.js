@@ -7,6 +7,12 @@ export default function StyledCard({ children, title, type }) {
     <div className={`card-component ${type}`}>
       {children}
       <h2>{title}</h2>
+      <h3>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo, 
+        quos eum? Repellendus aliquam asperiores est 
+        numquam sequi debitis beatae. Facere eaque minus rem cum, 
+        quaerat soluta libero accusantium nesciunt optio!
+      </h3>
     </div>
   )
 }
