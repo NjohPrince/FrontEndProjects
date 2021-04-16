@@ -60,7 +60,7 @@ img {
 
 }
 .card-1 {
-  z-index: 9999;
+  z-index: 1;
   transform: rotateY(0deg);
   -ms-transform: rotateY(0deg);
   -webkit-transform: rotateY(0deg);
@@ -82,4 +82,5 @@ img {
   transform: rotateY(-360deg);
   -ms-transform: rotateY(-360deg);
   -webkit-transform: rotateY(-360deg);
+  z-index: 9999;
 }
