@@ -27,6 +27,10 @@ class App extends React.Component {
     document.onkeydown = this.onkeydown;
   }
 
+  componentDidUpdate() {
+    this.checkBoundaries();
+  }
+
   onkeydown = (e) => {
     e = e || window.event;
     switch(e.keyCode) {
@@ -68,6 +72,26 @@ class App extends React.Component {
 
     this.setState({
       snakeDots: dots
+    })
+  }
+
+  checkBoundaries() {
+    let head = this.state.snakeDots[this.state.snakeDots.length - 1];
+    if(head[0] >= 100 || head[1] >= 100 || head[0] < 0 || head[1] < 0) {
+      this.gameOver();
+    }
+  }
+
+  gameOver() {
+    alert(`Game Over! Snake length is ${this.state.snakeDots.length}`);
+    this.setState({
+      food: getRandomCoordinates(),
+      speed: 200,
+      direction: 'RIGHT',
+      snakeDots: [
+        [0, 0],
+        [2, 0]
+      ]
     })
   }
 
