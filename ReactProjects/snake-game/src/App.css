@@ -1,0 +1,7 @@
+.game-zone {
+  position: relative;
+  margin: 50px auto;
+  width: 500px;
+  height: 500px;
+  border: 2px solid #000;
+}
