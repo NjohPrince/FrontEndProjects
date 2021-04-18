@@ -1,4 +1,4 @@
-# Project Delpoy Link
+# Project Deploy Link
 
 [Snake Game Link](http://snakegame-reactjs.herokuapp.com/).
 
