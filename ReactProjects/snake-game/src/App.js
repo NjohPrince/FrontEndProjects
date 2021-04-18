@@ -142,8 +142,10 @@ class App extends React.Component {
         <Food dot={this.state.food} />
       </div>
       <div className="score-board">
-        <h1>Score: { this.state.snakeDots.length - 2 }</h1>
-        <h1>Snake Length { this.state.snakeDots.length }</h1>
+        <div className="box">
+          <h1>Score: { this.state.snakeDots.length - 2 }</h1>
+          <h1>Snake Length { this.state.snakeDots.length }</h1>
+        </div>
       </div>
       </>
     );

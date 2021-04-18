@@ -39,3 +39,10 @@
   align-items: center;
   justify-content: center;
 }
+.score-board .box {
+  padding: 1rem;
+  background: rgb(0, 0, 0);
+}
+.score-board .box h1 {
+  color: #fff;
+}
