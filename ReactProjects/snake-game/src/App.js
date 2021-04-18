@@ -32,6 +32,7 @@ class App extends React.Component {
   componentDidUpdate() {
     this.checkBoundaries();
     this.checkHeadBodyCollision();
+    this.checkSnakeHeadFoodCollision();
   }
 
   onkeydown = (e) => {
@@ -93,6 +94,25 @@ class App extends React.Component {
       if(head[0] == dot[0] && head[1] == dot[1]) {
         this.gameOver();
       }
+    })
+  }
+
+  checkSnakeHeadFoodCollision() {
+    let head = this.state.snakeDots[this.state.snakeDots.length -1];
+    let food = this .state.food;
+    if(head[0] == food[0] && head[1] == food[1]) {
+      this.setState({
+        food: getRandomCoordinates()
+      })
+      this.increaseSnakeLength();
+    }
+  }
+
+  increaseSnakeLength() {
+    let newSnake = [...this.state.snakeDots];
+    newSnake.unshift([]);
+    this.setState({
+      snakeDots: newSnake
     })
   }
 
