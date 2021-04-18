@@ -104,6 +104,7 @@ class App extends React.Component {
       this.setState({
         food: getRandomCoordinates()
       })
+      this.increaseSnakeMovementSpeed();
       this.increaseSnakeLength();
     }
   }
@@ -114,6 +115,14 @@ class App extends React.Component {
     this.setState({
       snakeDots: newSnake
     })
+  }
+
+  increaseSnakeMovementSpeed() {
+    if(this.state.speed > 10) {
+      this.setState({
+        speed: this.state.speed - 10
+      })
+    }
   }
 
   gameOver() {
