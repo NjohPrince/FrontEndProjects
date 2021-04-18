@@ -10,9 +10,7 @@ const getRandomCoordinates = () => {
   return [x, y];
 }
 
-class App extends React.Component {
-
-  state = {
+const initialState = {
     food: getRandomCoordinates(),
     speed: 200,
     direction: 'RIGHT',
@@ -20,7 +18,11 @@ class App extends React.Component {
       [0, 0],
       [2, 0]
     ]
-  }
+}
+
+class App extends React.Component {
+
+  state = initialState;
 
   componentDidMount() {
     setInterval(this.moveSnake, this.state.speed);
@@ -84,15 +86,7 @@ class App extends React.Component {
 
   gameOver() {
     alert(`Game Over! Snake length is ${this.state.snakeDots.length}`);
-    this.setState({
-      food: getRandomCoordinates(),
-      speed: 200,
-      direction: 'RIGHT',
-      snakeDots: [
-        [0, 0],
-        [2, 0]
-      ]
-    })
+    this.setState(initialState);
   }
 
   render () {
