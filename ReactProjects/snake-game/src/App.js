@@ -12,7 +12,7 @@ const getRandomCoordinates = () => {
 
 const initialState = {
     food: getRandomCoordinates(),
-    speed: 200,
+    speed: 150,
     direction: 'RIGHT',
     snakeDots: [
       [0, 0],
@@ -136,10 +136,16 @@ class App extends React.Component {
 
   render () {
     return (
+      <>
       <div className="game-zone">
         <Snake snakeDots={this.state.snakeDots} />
         <Food dot={this.state.food} />
       </div>
+      <div className="score-board">
+        <h1>Score: { this.state.snakeDots.length - 2 }</h1>
+        <h1>Snake Length { this.state.snakeDots.length }</h1>
+      </div>
+      </>
     );
   }
   
