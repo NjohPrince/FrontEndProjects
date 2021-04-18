@@ -1,14 +1,23 @@
 import React from 'react';
-import './App.css';
+import Snake from './Snake'
 
-function App() {
-  return (
-    <div className="game-zone">
-      <div className="snake-dot" style={{top: 0, left: 0}}></div>
-      <div className="snake-dot" style={{top: 0, left: '2%'}}></div>
-      <div className="snake-dot" style={{top: 0, left: '4%'}}></div>
-    </div>
-  );
+class App extends React.Component {
+
+  state = {
+    snakeDots: [
+      [0, 0],
+      [2, 0]
+    ]
+  }
+
+  render () {
+    return (
+      <div className="game-zone">
+        <Snake snakeDots={this.state.snakeDots} />
+      </div>
+    );
+  }
+  
 }
 
 export default App;
