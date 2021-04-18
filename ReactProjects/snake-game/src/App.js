@@ -14,11 +14,18 @@ class App extends React.Component {
 
   state = {
     food: getRandomCoordinates(),
+    direction: 'RIGHT',
     snakeDots: [
       [0, 0],
       [2, 0]
     ]
   }
+
+  componentDidMount() {
+    document.onkeydown = this.onkeydown;
+  }
+
+  
 
   render () {
     return (
