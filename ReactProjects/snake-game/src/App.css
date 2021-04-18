@@ -5,3 +5,10 @@
   height: 500px;
   border: 2px solid #000;
 }
+.snake-dot {
+  position: absolute;
+  width: 2%;
+  height: 2%;
+  background: #000;
+  border: 1px solid #fff;
+}
