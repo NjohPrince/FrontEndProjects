@@ -1,6 +1,6 @@
 import React from 'react';
 
-export default (props) => {
+const Snake = (props) => {
     return (
         <div>
             {props.snakeDots.map((dot, i) => {
@@ -15,3 +15,5 @@ export default (props) => {
         </div>
     )
 }
+
+export default Snake;
